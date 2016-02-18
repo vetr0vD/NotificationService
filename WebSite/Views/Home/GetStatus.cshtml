@@ -1,0 +1,9 @@
+﻿@model Data.WorkNotification 
+
+<div class="text-center">
+    @{
+        var result = Model != null ? Model.ToString() : new Data.WorkNotification().ToString();
+    }
+
+    @result;
+</div>
